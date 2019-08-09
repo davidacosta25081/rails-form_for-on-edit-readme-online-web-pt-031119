@@ -27,4 +27,6 @@ class PostsController < ApplicationController
 	  @post = Post.find(params[:id])
 	  @post.update(params.require(:post).permit(:title, :description))
 	end
+
+
 end
